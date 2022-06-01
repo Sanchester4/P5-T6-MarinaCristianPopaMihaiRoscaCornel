@@ -1,0 +1,435 @@
+/*Navabar section*/
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+
+/*Task Section*/
+.body2{
+    margin-left: 200px ;
+    max-width: 1000px;
+    color: rgba(0,0,0,.87);
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    min-width: 18.75rem;
+}
+
+.task-container{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 1.25rem 1.5rem 1.5rem 1.5rem;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    margin-top: 5%;
+}
+
+.left-side{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    max-width: 47.5rem;
+    min-width: 0
+}
+.task-header{
+    border-bottom: 1px solid #4285f4;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.task-title{
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 0.25rem;
+}
+.title-task{
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    overflow: hidden;
+    word-wrap: break-word;
+    color: #1967d2;
+    fill: #1967d2;
+}
+.grade-deadline{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+}
+.task-grade{
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+    overflow: hidden;
+    letter-spacing: .01785714em;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #3c4043;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.grade-text{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+}
+.task-deadline{
+    letter-spacing: .01785714em;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #3c4043;
+}
+.task-description{
+    margin-bottom: 1rem;
+    overflow: hidden;
+    word-wrap: break-word;
+    letter-spacing: .01428571em;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #3c4043;
+}
+
+.comment-section{
+    border-top: 0.125rem solid #e8eaed;
+}
+.comment-header{
+    padding-top: 1rem;
+    letter-spacing: .01785714em;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #3c4043;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+}
+.user-img{
+    -webkit-align-self: initial;
+    align-self: initial;
+    height: 2rem;
+    margin-right: 1rem;
+    width: 2rem;
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    max-height: 75px;
+    max-width: 75px;
+    vertical-align: middle;
+}
+#comment-icon{
+    margin-right: 0.5rem;
+    color: #5f6368;
+    fill: #5f6368;
+}
+.comment-text{
+        letter-spacing: .01785714em;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #3c4043;    letter-spacing: .01785714em;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #3c4043;
+}
+.comment-footer{
+    padding: 1rem 1.5rem 1rem 0;
+}
+.comment-send-body{
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.comment-send-field{
+    max-width: -webkit-calc(100% - (2rem + 1rem + 0rem));
+    max-width: calc(100% - (2rem + 1rem + 0rem));
+
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.comment-inputfield{
+    width: 500px;
+    border: 1px solid grey;
+    border-radius: 1rem;
+}
+
+
+.comment-inputfield::placeholder{
+    padding-left: 10px;
+}
+.comment-inputfield[type=text] {
+    padding-left: 10px;
+  }
+
+  .send-comment{
+      border: 1px solid grey;
+      border-radius: 16px;
+      background-color: transparent;
+  }
+
+  .send-comment:hover{
+      background-color: #a5a8ab;
+  }
+
+
+
+  .right-side{
+    -webkit-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-left: 2rem;
+    max-width: 18.75rem;
+    width: 18.75rem;
+  }
+
+  .uploadfile-body{
+    padding: 1.5rem;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+
+  .uploadfile-title{
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+  .uploadfile-title span{
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: #3c4043;
+  }
+
+  .uploadfile-input-box{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .choose-file-box{
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+  .send-file-box{
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .comments-list-body{
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+}
+.comments-list-tile{
+    margin: 1rem 1.5rem 0 1.5rem;
+    letter-spacing: .01785714em;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #3c4043;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.avatar{
+    margin-right: 0.5rem;
+    color: #5f6368;
+    fill: #5f6368;
+}
+.comments-title{
+    letter-spacing: .01785714em;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #3c4043;
+    
+}
+.comment-body{
+    padding: 0 1.5rem;
+    width: 225px;
+}
+
+.comment-container{
+    margin-bottom: 1rem;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    width: 225px;
+}
+
+.user-comment-img{
+    height: 2rem;
+    margin: 0.4rem 1rem 0 0;
+    width: 2rem;
+
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    max-height: 75px;
+    max-width: 75px;
+    vertical-align: middle;
+}
+
+.comment-info{
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    min-width: 0;
+}
+.comment-info-header{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    min-height: 1.5rem;
+    width: 200px;
+}
+.thing{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    margin-left: 0.5rem;
+}
+.comment-sender{
+    display: inline;
+    margin-right: 0.5rem;
+    letter-spacing: .01785714em;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1.25rem;
+    color: #000000;
+    
+}
+.comment-date{
+    letter-spacing: .025em;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #5f6368;
+    display: inline-block;
+}
+
+.comment-content{
+    word-wrap: break-word;
+    letter-spacing: .01428571em;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #3c4043;
+}
+.comment-content span{
+    word-wrap: break-word;
+    letter-spacing: .01428571em;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #3c4043;
+}

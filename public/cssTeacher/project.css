@@ -1,0 +1,146 @@
+/*Navbar section*/
+/*Navabar section*/
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+/*Projects section*/
+.project-table {
+    display: grid;
+    flex-wrap: wrap;
+    width: min(1000px, 100%);
+    grid-template-columns: repeat(4, 1fr);
+    padding: auto;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 100px;
+  }
+  .project-body{
+    cursor: pointer;
+    list-style-type: none;
+    display: grid;
+    background-clip: padding-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: 18.375rem; /*294px*/
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 18.75rem;/*300px*/
+    background-color: #fff;
+    border: 0.0625rem solid #a4a2a2;
+    -webkit-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .PNzAWd {
+    border-radius: 50%;
+    float: right;
+    height: 4.6875rem;
+    position: relative;
+    margin-top: -3.09375rem;
+    width: 4.6875rem;
+  }
+  .project-header{
+      position: relative;
+      background-image: url("https://gstatic.com/classroom/themes/img_backtoschool.jpg");
+      background-repeat: no-repeat;
+    background-size: cover;
+      color: #000000;
+      text-align: center;
+      height: 100px;
+  }
+  .project-name{
+    padding-left: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    color: white;
+    position: relative;
+  }
+  .project-name a{
+    padding-left: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    color: white;
+    position: relative;
+  }
+  .project-name a::after{
+    padding-left: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    color: white;
+    position: relative;
+  }
+  
+  .teacher-name{
+    padding-left: 10px;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+  .project-middle-body{
+    height: 100px;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    min-height: 0;
+    padding: 1rem;
+    padding-top: 0.75rem;
+  }
+  .project-middle-body a{
+    background-clip: padding-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: 18.375rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 18.75rem;
+  }
+  .project-footer{
+    height: 50px;
+    border-top: 0.0625rem solid #b8b7b7;
+    padding: 0.25rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+  }
+  
+  .project-body:hover{
+    border: 1px solid;
+    box-shadow: 2.5px 5px 2.5px 2.5px #888888;
+  }

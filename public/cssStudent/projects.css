@@ -1,0 +1,343 @@
+/*Navbar section*/
+/*Navabar section*/
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+  }
+  /*Navbar Section*/
+  .navbar {
+    background: linear-gradient(135deg, #dd94e1 10%, #1461d5 100%);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  
+  #navbar__logo {
+    background-color: #000000;
+    background: -webkit-linear-gradient(to right, #0a0808, #251777, #000000);
+    background: linear-gradient(to right, #000000, #4808d3, #000000);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2.5rem;
+    text-shadow: #ff8044;
+    font-weight: bolder;
+    margin-top: -2%;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .navbar__item {
+    height: 80px;
+  }
+  
+  .navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 1s ease;
+  }
+  
+  .navbar_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+  }
+  
+  .navbar__links:hover {
+    color: #000000;
+    transition: all 0.3s ease;
+  }
+  .button:hover {
+    color: #000000;
+    transition: all 1s ease;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .navbar__container {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      z-index: 1;
+      width: 100%;
+      max-width: 1300px;
+      padding: 0;
+    }
+  
+    .navbar__menu {
+      display: grid;
+      grid-template-columns: auto;
+      margin: 0;
+      width: 100%;
+      position: absolute;
+      top: -1000px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: -1;
+    }
+  
+    .navbar__menu.active {
+      background: #131313;
+      top: 100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 99;
+      height: 90vh;
+      font-size: 1.6rem;
+    }
+  
+    #navbar__logo {
+      padding-left: 15px;
+    }
+  
+    .navbar__toggle .bar {
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition: all 0.3s ease-in-out;
+      background: #fff;
+    }
+  
+    .navbar__item {
+      width: 100%;
+    }
+  
+    .navbar__links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .navbar__btn {
+      padding-bottom: 2rem;
+    }
+  
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 80px;
+      margin: 0;
+    }
+  
+    #mobile-menu {
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      transform: translate(5%, 20%);
+    }
+    .navbar__toggle .bar {
+      display: block;
+      cursor: pointer;
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+
+
+/*Projects section*/
+.project-table {
+    display: grid;
+    flex-wrap: wrap;
+    width: min(1000px, 100%);
+    grid-template-columns: repeat(4, 1fr);
+    padding: auto;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 100px;
+  }
+  .project-body{
+    cursor: pointer;
+    list-style-type: none;
+    display: grid;
+    background-clip: padding-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: 18.375rem; /*294px*/
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 18.75rem;/*300px*/
+    background-color: #fff;
+    border: 0.0625rem solid #a4a2a2;
+    -webkit-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .PNzAWd {
+    border-radius: 50%;
+    float: right;
+    height: 4.6875rem;
+    position: relative;
+    margin-top: -3.09375rem;
+    width: 4.6875rem;
+  }
+  .project-header{
+      position: relative;
+      background-image: url("https://gstatic.com/classroom/themes/img_backtoschool.jpg");
+      background-repeat: no-repeat;
+    background-size: cover;
+      color: #000000;
+      text-align: center;
+      height: 100px;
+  }
+  .project-name{
+    padding-left: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    color: white;
+    position: relative;
+  }
+  .project-name a{
+    padding-left: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    color: white;
+    position: relative;
+  }
+  .project-name a::after{
+    padding-left: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    color: white;
+    position: relative;
+  }
+  
+  .teacher-name{
+    padding-left: 10px;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+  .project-middle-body{
+    height: 100px;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    min-height: 0;
+    padding: 1rem;
+    padding-top: 0.75rem;
+  }
+  .project-middle-body a{
+    background-clip: padding-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: 18.375rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 18.75rem;
+  }
+  .project-footer{
+    height: 50px;
+    border-top: 0.0625rem solid #b8b7b7;
+    padding: 0.25rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+  }
+  
+  .project-body:hover{
+    border: 1px solid;
+    box-shadow: 2.5px 5px 2.5px 2.5px #888888;
+  }
